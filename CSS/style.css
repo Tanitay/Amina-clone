@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  /** Background colors */
+  --bg-dark: #000000;
+  --bg-light: #ffffff;
+  --amina-orange: #ffae6c;
+
+  /** Typography colors */
+  --text-light: #ffffff;
+  --text-dark: #222020;
+  --text-grey: #7e7977;
+}
+
+body {
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI" Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+    margin: 0;
+}
+
+header {
+  background-color: var(--bg-dark);
+  padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    padding: 0;
+    display: flex;
+    font-size: 14px;
+}
+
+.nav-list-item {
+    color: var(--text-light)
+    list-style-type; none;
+    margin: 0px 20px;
+}
+
+.nav-link {
+    color:var(--text-light);
+    text-decoration: none;
+}
+.nav-btn{
+    background-color:var(--bg-light);
+    color: var(--text-dark);
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
+.nav-btn:hover{
+    color:var(--text-light);
+    background-color: transparent;
+}
+
+.hero {
+    background-image: url('../images/hero-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 600px;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 16px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.h1-light {
+    color:var(--text-light)
+    display: block;
+}
+
+.h1-grey {
+    color:var(--text-grey);
+    display: block;
+}
+
+.hero-cta {
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 8px 12px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.hero-cta_primary {
+    background-color: var(--amina-orange);
+    margin-right: 10px;
+}
+
+.hero-cta_primary:hover {
+    background-color: transparent;
+    border: 1px solid var(--amina-orange);
+    color: var(--amina-orange);
+    transition: 0.3s ease-in;
+}
+
+.hero-cta_secondary {
+    background-color: var(--bg-light);
+}
+
+.hero-cta_secondary:hover {
+    background-color: transparent;
+    border: 1px solid var(--bg-light);
+    color: var(--text-light);
+    transition: 0.3s ease-in;
+}
+
+.products {
+    margin: 80px 0;
+    padding: 0px 20px;
+}
+
+.products-text {
+    display: flex;
+    align-items: center;
+}
+
+.product.header {
+    font-size: 56px;
+    width: 50%;
+    line-height: 0.8;
+}
+
+.span-block {
+    display: block;
+}
+
+.product-description {
+    font-size: 18px;
+    width: 40%;
+}
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.product-image {
+    width: 49%;
+    position: relative;
+}
+
+.product-image p {
+    color: var(--text-light);
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.product-image span {
+    color: var(--text-light);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 100px;
+    font font-weight: 500;
+}
+
+
+
